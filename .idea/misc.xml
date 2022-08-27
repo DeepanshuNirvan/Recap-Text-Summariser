@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1569078947368421" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/drawable/border.xml" value="0.2484375" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/drawable/btn.xml" value="0.2484375" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/drawable/btn2.xml" value="0.2484375" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/drawable/toast.xml" value="0.2484375" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/drawable/toast2.xml" value="0.2484375" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/drawable/toolbar.xml" value="0.2484375" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-h2000dp/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-h2300dp/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-large/activity_main.xml" value="0.3484375" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-large/activity_summary.xml" value="0.17421875" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-large/activity_summary2.xml" value="0.17421875" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-long/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-normal/activity_main.xml" value="0.136" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-normal/activity_summary.xml" value="0.136" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-normal/activity_summary2.xml" value="0.152" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-small/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-small/activity_summary.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-small/activity_summary2.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-xlarge/activity_main.xml" value="0.17421875" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-xlarge/activity_summary.xml" value="0.17421875" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout-xlarge/activity_summary2.xml" value="0.17421875" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/activity_loading.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/activity_splash.xml" value="0.21822916666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/activity_splash2.xml" value="0.136" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/activity_summary.xml" value="0.2" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/activity_summary2.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/toast.xml" value="0.25" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/layout/toast2.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/menu/tb_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Deepanshu/Desktop/Deepanshu/Programs/Android Dev/Recap/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

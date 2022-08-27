@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8FAE5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Summary"
+        android:background="#C8FAE5">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="2.5dp"
+            android:background="@drawable/toolbar"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:subtitleTextColor="#000000"
+                app:titleTextColor="#000000" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/summary2"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn"
+            android:elevation="15dp"
+            android:fontFamily="@font/amaranth"
+            android:text="Generate An Overview"
+            android:textColor="#FDFCFC"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_constraintBottom_toTopOf="@id/textshow"/>
+
+        <TextView
+            android:id="@+id/textshow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/amaranth"
+            android:shadowColor="#494545"
+            android:text="SUMMARY: "
+            android:textColor="#090808"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@id/textView4"
+            app:layout_constraintHorizontal_bias="0.184"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/summary2" />
+
+        <EditText
+            android:id="@+id/textarea2"
+            android:layout_width="320dp"
+            android:layout_height="380dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints="Text Here"
+            android:background="@drawable/border"
+            android:elevation="15dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:lines="2000"
+            android:overScrollMode="always"
+            android:padding="18dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:text=""
+            android:textColor="#050505"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textshow" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/share_s"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn"
+            android:elevation="10dp"
+            android:fontFamily="@font/amaranth"
+            android:text="Share Summary"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/copy"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textarea2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/copy"
+            android:layout_width="145dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn"
+            android:elevation="10dp"
+            android:fontFamily="@font/amaranth"
+            android:text="Copy"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textarea2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/download"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn"
+            android:elevation="10dp"
+            android:fontFamily="@font/amaranth"
+            android:text="DOWNLOAD"
+            android:textColor="#FDFCFC"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/share_s" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/download" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="65dp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@id/textshow"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textshow"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
