@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668655234841",
+    "project_id": "recap-text-summariser",
+    "storage_bucket": "recap-text-summariser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668655234841:android:b2b10fe4bb2a3b14b49f88",
+        "android_client_info": {
+          "package_name": "com.recap.recap_textsummariser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668655234841-eis81bhu9h09qd3pn807uhj8nro19tpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBARnxw4yIftm-iqyVmMMm0xOeSyMnIiLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668655234841-eis81bhu9h09qd3pn807uhj8nro19tpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

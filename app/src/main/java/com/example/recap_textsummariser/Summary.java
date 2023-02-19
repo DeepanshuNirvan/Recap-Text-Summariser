@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -256,25 +257,26 @@ public class Summary extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.share) {
-            String data = "https://play.google.com/store/apps/details?=" + BuildConfig.APPLICATION_ID + "\n\n";
+            String data = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
             Intent ishare = new Intent(Intent.ACTION_SEND);
             ishare.putExtra(Intent.EXTRA_TEXT, data);
             ishare.setType("text/plain");
             startActivity(Intent.createChooser(ishare, "Share Via:"));
 
         } else if(item.getItemId()==R.id.rate){
-            String data = "https://play.google.com/store/apps/details?=" + BuildConfig.APPLICATION_ID + "\n\n";
-            gotoUrl(data);
-
+            try{
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("market://details?id=" + BuildConfig.APPLICATION_ID)));
+            }
+            catch(ActivityNotFoundException e){
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://play.google.com/store/apps/detail?id=" + BuildConfig.APPLICATION_ID)));
+            }
         }
         else{
             super.onBackPressed();
         }
         return super.onOptionsItemSelected(item);
     }
-    private void gotoUrl(String s){
-        Uri uri=Uri.parse(s);
-        startActivity(new Intent(Intent.ACTION_VIEW,uri));
 
-    }
 }

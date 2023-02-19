@@ -10,6 +10,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.DialogInterface;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     String word_count = "20";
-    String url = "https://recap-textsummarise.herokuapp.com/summary";
+    String url = "https://deepanshunirvan.pythonanywhere.com/summary";
     String summ1, summ2, input;
 
     @Override
@@ -203,8 +204,8 @@ public class MainActivity extends AppCompatActivity {
                 ClipData clip = cb.getPrimaryClip();
                 if (clip != null) {
                     ClipData.Item item = clip.getItemAt(0);
-
-                    String data = item.getText().toString();
+                    String data= "Nothing to Paste,please Copy Something First...";
+                    if(item!=null) data= item.getText().toString();
                     textarea.append(data);
                     Toast toast = new Toast(getApplicationContext());
                     View view2 = getLayoutInflater().inflate(R.layout.toast, (ViewGroup) findViewById(R.id.toast));
@@ -270,25 +271,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.share) {
-            String data = "https://play.google.com/store/apps/details?=" + BuildConfig.APPLICATION_ID + "\n\n";
+            String data = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
             Intent ishare = new Intent(Intent.ACTION_SEND);
             ishare.putExtra(Intent.EXTRA_TEXT, data);
             ishare.setType("text/plain");
             startActivity(Intent.createChooser(ishare, "Share Via:"));
 
         } else {
-            String data = "https://play.google.com/store/apps/details?=" + BuildConfig.APPLICATION_ID + "\n\n";
-            gotoUrl(data);
+
+            try{
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("market://details?id=" + BuildConfig.APPLICATION_ID)));
+            }
+            catch(ActivityNotFoundException e){
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://play.google.com/store/apps/detail?id=" + BuildConfig.APPLICATION_ID)));
+            }
 
         }
         return super.onOptionsItemSelected(item);
     }
 
-    private void gotoUrl(String s) {
-        Uri uri = Uri.parse(s);
-        startActivity(new Intent(Intent.ACTION_VIEW, uri));
-
-    }
 
     @Override
     public void onBackPressed() {
